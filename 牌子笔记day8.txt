@@ -20,14 +20,11 @@
 
 注意：不需要加 script 标签，直接写 JS 代码即可。
 
-
-
           // 这个文件里全是 JS 代码
-
 
 // 打印、输出
 
-         console.log('Hello World ~')
+       console.log('Hello World ~')
     
          console.log(100)
 console.log(1123*435)
