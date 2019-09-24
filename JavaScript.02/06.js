@@ -15,7 +15,7 @@ var people = {
 people.ender= '男'
 console.log(people)
 
-var people = {
+var people1 = {
     name : '广东靓仔',
     age : 18,
     height: 172,
@@ -27,7 +27,7 @@ var ender='ender'
 people[ender]= '男';
 console.log(people)
 
-var people =  new Object({
+var people2 =  new Object({
     name : '牛逼',
     age : 25,
     height: 180,
@@ -36,3 +36,5 @@ var people =  new Object({
     phone: 'OPPO'
 })
 console.log(people)
+console.log( people2.name )
+delete people2.weight
