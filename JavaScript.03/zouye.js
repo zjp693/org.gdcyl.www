@@ -8,6 +8,7 @@ var pepole = {
     age:18,
     hobby:'sleep'
 }
+
 console.log(pepole)
 //3. 有一个数组：var arr = [12,43,54,43]，写代码计算数组中第1个元素和第3个元素的和？
 var arr = [12,43,54,43]
