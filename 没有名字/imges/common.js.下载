@@ -1,0 +1,38 @@
+// JavaScript Document
+
+
+$(function(){	
+	//µ¼º½
+	$(".nav_first").each(function(index, element) {
+		var $ts=$(this);
+		$ts.mouseover(function(){
+			$ts.parents(".nav_list").find(".nav_child").stop(true,true).hide();
+			$ts.siblings(".nav_child").stop(true,true).show();
+			$ts.addClass("on");
+		}).mouseleave(function(){
+			$ts.siblings(".nav_child").delay(100).hide(1);
+			$ts.removeClass("on");
+		})
+	});
+	$(".nav_child").each(function(index, element) {
+		var $ts=$(this);
+		$ts.mouseover(function(){
+			$ts.stop(true,true).show();
+			$ts.siblings(".nav_first").addClass("on");
+		}).mouseleave(function(){
+			$ts.delay(100).hide(1);
+			$ts.siblings(".nav_first").removeClass("on");	
+		})
+	});
+	
+	$(document.body).on("mouseover",".floatWei_btn",function(){
+		$(".floatWei_cont").hide();
+		$(this).siblings(".floatWei_cont").show();
+	})
+	$(document.body).on("mouseleave",".floatWei_btn",function(){
+		$(".floatWei_cont").hide();
+	})
+	$(document.body).on("click",".floatWei_close",function(){
+		$(".floatWei").hide(500);
+	})
+})

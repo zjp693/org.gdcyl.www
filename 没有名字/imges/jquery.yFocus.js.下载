@@ -1,0 +1,160 @@
+/*!
+ * jQuery 轮换图
+ *
+ * Version:  1.0.4
+ * Released: 2014-01-17
+ * Author:   桃子
+ * Email:    578999047@qq.com
+ * Company:  新网互联
+ *
+ */
+;(function($){
+	$.fn.extend({
+		"yFocus":function(options){
+			options=$.extend({
+				auto:!0,                        //自动播放
+				speed:500,						//速度
+				timeout:5E3,                    //时间间隔
+				imgBox:".images",               //图片列表容器
+				pager:!1,                       //图片个数
+				navNum:false
+			},options);
+			var _ths=$(this);
+			_ths.css("position","relative").css("overflow","hidden");
+			var Fwidth=_ths.width();
+			var a=_ths.find(options.imgBox).children();          //图片列表
+			var pager=a.length;                                      //图片个数                                 
+			var resetEff={opacity:0};                             //开始动画队列
+			var endEff={opacity:1};                              //结束动画队列
+			
+			function resetFocus(){    
+				                           //初始化函数
+				if(a.length>1){    //幻灯片大于等于2个才执行
+					a.each(function(index, element) {		
+						$(this).css("position","absolute").show();
+						if($(this).index()!=0){
+							$(this).hide();
+							$(this).css("opacity","0");	
+						}
+					});
+					setNav(a.length);
+					setControls();
+					_ths.find(".footNav").find("li").each(function(index, element) {                       
+						$(this).on("click",function(event){
+							goPages(event);
+						}).on("mousemove",function(event){
+							if(options.navPic){								
+								var picLeft=event.pageX-_ths.offset().left-(_ths.find(".yFocusViewPic").outerWidth())/2;
+								if(picLeft>=(Fwidth-_ths.find(".yFocusViewPic").outerWidth())){
+									picLeft=Fwidth-_ths.find(".yFocusViewPic").outerWidth();
+								}
+								if(picLeft<=0){
+									picLeft=0;
+								}
+								_ths.find(".yFocusViewPic").css({           
+									"position":"absolute",
+									"z-index":"10",
+									"left":picLeft
+								})
+								var smallPicSrc=a.eq($(this).index()).find("img").attr("src");
+								_ths.find(".yFocusViewPic").attr("src",smallPicSrc).show().css("left",picLeft);
+							}	
+						})
+						
+					});
+					
+					_ths.find(".leftControls").on("click",function(){prevPic()});
+					_ths.find(".rightControls").on("click",function(){nextPic()});
+
+				}				
+			};
+			     
+			resetFocus();
+			
+			function setNav(num){                                 //生成底部小按钮
+				var navWidth=-(num*28)/2;
+				var navString="<ul class='footNav' style='margin-left:"+navWidth+"px'>";
+				for(var i=1; i<=num; i++){
+					if(options.navNum){
+						if(i==1){
+							navString+="<li class='cur'>"+i+"</li>";	
+						}else{
+							navString+="<li>"+i+"</li>";
+						}
+					}else{
+						if(i==1){
+							navString+="<li class='cur'></li>";	
+						}else{
+							navString+="<li></li>";
+						}	
+					}
+				}
+				navString+="</ul>";
+				_ths.append(navString);
+			}
+			
+			function setControls(){                                  //左右按钮
+				var conString="<div class='controls leftControls'><</div><div class='controls rightControls'>></div>";
+				_ths.append(conString);
+			}
+			
+			function nextPic(){                                      //右函数
+				var curPage=a.has(":visible");						
+				if(curPage.is(":not(':animated')")){
+					curPage.animate(resetEff,options.speed,function(){curPage.hide()});
+					_ths.find(".footNav").find("li").removeClass("cur");
+					if(curPage.index()>=(a.length-1)){
+						_ths.find(".footNav").find("li:first").addClass("cur");
+						a.eq(0).show().animate(endEff,options.speed);	
+									
+					}else{
+						_ths.find(".footNav").find("li").eq(curPage.index()+1).addClass("cur");
+						curPage.next("li").show().animate(endEff,options.speed);									
+					}
+				}
+			}
+			
+			function prevPic(){                                    //左函数
+				var curPage=a.has(":visible");						
+				if(curPage.is(":not(':animated')")){					
+					curPage.animate(resetEff,options.speed,function(){curPage.hide()});
+					_ths.find(".footNav").find("li").removeClass("cur");
+					if(curPage.index()==0){
+						
+						_ths.find(".footNav").find("li:last").addClass("cur");
+						a.eq(pager-1).show().animate(endEff,options.speed,function(){
+							
+						});	
+						
+					}else{
+						
+						_ths.find(".footNav").find("li").eq(curPage.index()-1).addClass("cur");
+						curPage.prev("li").show().animate(endEff,options.speed,function(){
+							
+						});						
+					}
+				}
+			}	
+			
+			function goPages(event){                                //去第几页
+				var curPage=a.has(":visible");
+				if(curPage.is(":not(':animated')")&&curPage.index()!=$(event.target).index()){
+					curPage.animate(resetEff,options.speed,function(){curPage.hide()});
+					_ths.find(".footNav").find("li").removeClass("cur");
+					_ths.find(".footNav").find("li").eq($(event.target).index()).addClass("cur");
+					a.eq($(event.target).index()).show().animate(endEff,options.speed);	
+				}
+			}	
+
+			if(options.auto&&a.length>1){
+				_ths.hover(function(){                      //划过暂停动画
+					clearInterval(flashStatus);
+				},function(){
+				    flashStatus=setInterval(function(){nextPic();},options.timeout);
+				})
+				var flashStatus=setInterval(function(){nextPic();},options.timeout);				
+			}
+			return this;
+		}
+	})
+})(jQuery);
