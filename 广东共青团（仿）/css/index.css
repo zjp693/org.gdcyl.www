@@ -1,0 +1,76 @@
+/* 背景 */
+.bj {
+
+    height: 814px;
+    background-image: url(../imges/bj.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bjt {
+    position: relative;
+    top: 250px;
+    background: url(../imges/n-nav-bg.png) no-repeat;
+}
+
+/* 版心高度 */
+.container {
+    top: -90px;
+    height: 180px
+}
+
+/* logo */
+.logo {
+    float: left;
+    width: 291px;
+    height: 142px;
+    background-image: url(../imges/n-logo.png);
+    background-repeat: no-repeat;
+}
+
+/* 口号 */
+.kh {
+    width: 359px;
+    height: 60px;
+    float: left;
+    background-image: url(../imges/sjd-txt-1.png);
+    background-repeat: no-repeat;
+    margin: 40px 0px 0px 80px;
+}
+
+/* 搜索框 */
+.search-box {
+    float: right;
+    width: 198px;
+    height: 26px;
+    margin-top: 50px;
+
+}
+
+/* 站内搜索字样 */
+.search-box span {
+    margin-top: -18px;
+    margin-left: 10px;
+    float: left;
+}
+
+/* 搜索 */
+.search-box input {
+    width: 163px;
+    height: 24px;
+    float: left;
+    border: none;
+}
+
+/* 搜索logo */
+.search-logo {
+    float: right;
+    width: 36px;
+    height: 26px;
+    margin-top: -25px;
+    background-color: #960101;
+    background-image: url(../imges/search_btn.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
