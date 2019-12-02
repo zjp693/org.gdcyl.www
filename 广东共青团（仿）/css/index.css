@@ -97,7 +97,11 @@ body {
     position: relative;
 }
 
+<<<<<<< HEAD
 .nav_list .s1 {
+=======
+.nav_list a.s1 {
+>>>>>>> 7eaeba96f569fc319b19447399ad0e32afd9a346
     background-image: url(../imges/nav-ico1.png);
 }
 
@@ -137,15 +141,19 @@ body {
 /* 开始隐身 */
 .nav_child {
     display: none;
+<<<<<<< HEAD
     position: absolute;
     top: 40px;
     /* left: 90px; */
 
+=======
+>>>>>>> 7eaeba96f569fc319b19447399ad0e32afd9a346
 }
 
 /* .nav_list:hover+.nav_child {
     display: block;
 } */
+<<<<<<< HEAD
 
 .top-nav li:nth-child(2):hover .nav_child,
 .top-nav li:nth-child(3):hover .nav_child,
@@ -156,15 +164,34 @@ body {
     display: block;
 }
 
+=======
+.top-nav:hover .nav_child {
+    display: block;
+}
+
+.nav_child {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+
+}
+
+>>>>>>> 7eaeba96f569fc319b19447399ad0e32afd9a346
 .nav_child li {
     display: block;
     background: #ac0101;
     border: 1px solid #9e0101;
 }
 
+<<<<<<< HEAD
 /* .nav_child li:nth-child(1) {
     background-color: #920101;
 } */
+=======
+.nav_child li:nth-child(1) {
+    background-color: #920101;
+}
+>>>>>>> 7eaeba96f569fc319b19447399ad0e32afd9a346
 
 .nav_child li a {
     text-align: center;
@@ -184,6 +211,7 @@ body {
     height: 0;
     border: 5px solid transparent;
     border-bottom: 5px solid #fff;
+<<<<<<< HEAD
 }
 
 /* 变色 */
@@ -234,4 +262,6 @@ body {
     border: 1px solid #d6d6d6;
     float: right;
     float: right;
+=======
+>>>>>>> 7eaeba96f569fc319b19447399ad0e32afd9a346
 }
