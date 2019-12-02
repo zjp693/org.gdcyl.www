@@ -1,14 +1,18 @@
+/* 辅助 */
 body {
     height: 1000000000px;
 }
 
+/* 搜索栏*/
 .red {
     background: url(../imges/bj.jpg) no-repeat center top;
     margin-top: 128px;
 }
 
 .w {
+    position: relative;
     height: 180px;
+    z-index: 100;
     background: url(../imges/n-nav-bg.png) no-repeat center bottom;
 }
 
@@ -60,9 +64,121 @@ body {
 
 }
 
-.w a {
+.w .a {
     position: absolute;
-    top: 71px;
+    top: 6px;
     right: 133px;
     color: #666666;
+}
+
+.red .top-nav {
+    /* width: 833px; */
+    height: 40px;
+    position: absolute;
+    left: 132px;
+    bottom: -170px;
+    /* background-color: blue; */
+}
+
+.top-nav>ul>li {
+    float: left;
+}
+
+.nav_list {
+    /* width: 90px; */
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    float: left;
+}
+
+.nav_list li {
+    float: left;
+    position: relative;
+}
+
+.nav_list a.s1 {
+    background-image: url(../imges/nav-ico1.png);
+}
+
+.nav_list .s2 {
+    background-image: url(../imges/nav-ico2.png);
+}
+
+.nav_list .s3 {
+    background-image: url(../imges/nav-ico3.png);
+}
+
+.nav_list .s4 {
+    background-image: url(../imges/nav-ico4.png);
+}
+
+.nav_list .s5 {
+    background-image: url(../imges/nav-ico5.png);
+}
+
+.nav_list .s6 {
+    background-image: url(../imges/nav-ico6.png);
+}
+
+.nav_list .s7 {
+    background-image: url(../imges/nav-ico7.png);
+}
+
+.nav_list a {
+    color: #fff;
+    display: block;
+    padding: 0 25px 0 35px;
+    float: left;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+/* 开始隐身 */
+.nav_child {
+    display: none;
+}
+
+/* .nav_list:hover+.nav_child {
+    display: block;
+} */
+.top-nav:hover .nav_child {
+    display: block;
+}
+
+.nav_child {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+
+}
+
+.nav_child li {
+    display: block;
+    background: #ac0101;
+    border: 1px solid #9e0101;
+}
+
+.nav_child li:nth-child(1) {
+    background-color: #920101;
+}
+
+.nav_child li a {
+    text-align: center;
+    display: block;
+    width: 105px;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #fff;
+}
+
+.nav_child s {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #fff;
 }
