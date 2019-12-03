@@ -209,8 +209,10 @@ body {
 
 /* < !-- banner --> */
 .banner {
-    padding: 15px 0 26px;
+    padding: 14px 0 25px;
     position: relative;
+    width: 100%;
+    height: 345px;
     z-index: 1;
 }
 
@@ -234,4 +236,271 @@ body {
     border: 1px solid #d6d6d6;
     float: right;
     float: right;
+}
+
+.banner-right-top {
+    width: 465px;
+    height: 30px;
+
+}
+
+.banner-right-top li {
+    /* position: relative; */
+    float: left;
+
+}
+
+.banner-right-top li {
+    line-height: 30px;
+    color: #333333;
+    padding: 0 14px;
+    font-size: 14px;
+}
+
+.banner-right-top li:hover {
+    background-color: #e50101;
+
+}
+
+.banner-right-top li:hover a {
+    color: #ffffff;
+}
+
+.banner-right-bottom {
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+.banner-right-bottom a {
+    font-size: 13px;
+    line-height: 28px;
+    color: #666;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .on {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid dashed dashed dashed;
+    border-width: 6px;
+    border-color: #e50101 transparent transparent transparent;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -11px;
+} */
+/* 共青团闻  */
+.nindex_work {
+    background-color: #0071b7;
+    height: 300px;
+    margin-bottom: 26px;
+}
+
+.nindex_work-imgs {
+    width: 52px;
+    height: 26px;
+    background-image: url(../imges/notice-icon.png);
+    /* background-repeat: no-repeat; */
+    /* position: relative; */
+}
+
+.nindex_work-title {
+    height: 48px;
+    color: #fff;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.nindex_work-title h3 {
+    font-size: 15px;
+    margin-top: -18px;
+    margin-left: 70px;
+}
+
+.nindex_work-title a {
+    line-height: 20px;
+    padding: 0 5px;
+    margin-top: -13px;
+    float: right;
+    font-size: 12px;
+    color: #ffffff;
+    font-style: italic;
+    border-bottom: 1px solid #fff;
+}
+
+.work-new img {
+    border: 1px solid #fff;
+    width: 297px;
+    height: 198px;
+    float: left;
+}
+
+.work-new1 {
+    float: left;
+    width: 304px;
+    height: 250px;
+    color: #ffffff;
+    margin-left: 13px;
+}
+
+.work-new1 i {
+    padding-bottom: 5px;
+    line-height: 18px;
+    display: block;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.work-new1 a {
+    line-height: 18px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.work-new1 h3 {
+    margin-bottom: 10px;
+}
+
+.work-new1 p {
+    border-top: 1px solid #ffffff;
+    padding: 8px 0 12px 0px;
+
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.work-new1 .zi {
+    color: #333;
+    background: #ffed00;
+    padding: 1px 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* /* 共青团闻右 */
+.nindex_work .work-right {
+    float: right;
+    width: 358px;
+    height: 200px;
+    font-size: 13px;
+    padding-left: 5px;
+    overflow: hidden;
+    line-height: 19px;
+}
+
+.work-right li {
+    padding: 3px 0 3px 10px;
+    position: relative;
+}
+
+.work-right li a {
+    color: #ffffff;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.work-right {
+    border-left: 1px dashed #fff;
+}
+
+/* 工作动态 */
+.work-trend {
+    background-color: #3d92c7;
+    position: relative;
+    height: 370px;
+}
+
+.work-trend-title {
+    height: 48px;
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 20px;
+    line-height: 48px;
+    background: url(../imges/setico.png) no-repeat;
+}
+
+.work-trend-title h3 {
+    font-size: 15px;
+}
+
+
+.work-trend-title a:nth-child(2) {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 33px;
+    left: 560px;
+    font-style: italic;
+    line-height: 18px;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.work-trend-title a:nth-child(5) {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    font-style: italic;
+    line-height: 18px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.work-trend-title h3:nth-child(4) {
+    font-size: 15px;
+
+    position: absolute;
+    top: 1px;
+    right: 200px;
+}
+
+.work-trend-title img {
+    position: absolute;
+    top: 0;
+    right: 280px;
+    width: 52px;
+    height: 26px;
+}
+
+.work-trend-bottom {
+    width: 616px;
+    float: left;
+    height: 216px;
+    /* overflow: hidden; */
+
+}
+
+.work-trend-bottom img {
+    float: left;
+    border: 1px solid #ffffff;
+    width: 297px;
+    height: 198px;
+}
+
+.work-trend-bottom-2 {
+    padding-top: 8px;
+    padding-left: 314px;
+}
+
+.work-trend-bottom-2 a {
+    padding: 3px 0 3px 10px;
+    color: #ffffff;
+    line-height: 19px;
+    font-size: 13px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.work-trend-bottom-2 s{
+    padding-right: 5px;
 }
