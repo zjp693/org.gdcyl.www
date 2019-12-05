@@ -1,7 +1,7 @@
-/* 辅助 */
+/* 辅助
 body {
     height: 5000px;
-}
+} */
 
 /* 搜索栏*/
 .red {
@@ -187,12 +187,37 @@ body {
 }
 
 /* 变色 */
-.nav_list>a:hover {
+.nav_list:hover>a {
     color: #fdeb00;
 }
 
 .nav_child a:hover {
     background-color: #920101;
+}
+
+.nav_list:hover+.nav_child a {
+    color: #fdeb00;
+}
+
+.top-nav .nav_list+.top-nav .nav_child {
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav_list+div.nav_child {
+    background: blue;
 }
 
 /* 习大大 */
@@ -793,8 +818,8 @@ body {
 .nindex_box3-top {
     background: url(../imges/titlebg2.png) no-repeat;
     width: 635px;
-    height: 40px;
-    background-color: hotpink;
+    height: 45px;
+    /* background-color: hotpink; */
 }
 
 .nindex_box3-top h3 {
@@ -811,12 +836,218 @@ body {
     padding-bottom: 2px;
     border-bottom: 1px solid #3d92c7;
 }
-.nindex_box3-bottom{
+
+.nindex_box3-bottom {
     line-height: 26px;
 }
+
 .nindex_box3-bottom a {
     font-size: 13px;
     margin-left: 5px;
     font-weight: normal;
     color: #666;
+}
+
+.nindex_box3-top-right {
+    margin-top: -198px;
+    float: right;
+    width: 292px;
+    height: 45px;
+    background: url(../imges/titlebg2.png) no-repeat;
+}
+
+.nindex_box3-top-right h3 {
+    color: #ffffff;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.nindex_box3-top-right i {
+    margin-top: -5px;
+    float: right;
+    font-style: italic;
+    color: #3d92c7;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #3d92c7;
+}
+
+.nindex_box3-top-right-1 {
+    width: 280px;
+    height: 166px;
+    padding-top: 28px;
+}
+
+.nindex_box3-top-right-1 img {
+    width: 115px;
+    height: 154px;
+    float: left;
+}
+
+.nindex_box3-top-right-1 img:nth-child(2) {
+    float: right;
+}
+
+/*他山之石  */
+.nindex_box4-bj {
+    float: left;
+    width: 108px;
+    height: 40px;
+    text-align: center;
+    line-height: 24px;
+    background: url(../imges/titlebg.png) no-repeat;
+}
+
+.nindex_box4-1 {
+    float: left;
+    width: 225px;
+    height: 40px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+    /* line-height: 24px; */
+    margin-right: 33px;
+    font-size: 14.04px;
+    font-weight: bolder;
+    color: #fff;
+    /* background: url(../imges/titlebg.png) no-repeat; */
+}
+
+.nindex_box4-1 a {
+    padding: 0 4px;
+    font-size: 12px;
+    color: #3d92c7;
+    float: right;
+    font-style: italic;
+    line-height: 20px;
+    border-bottom: 1px solid #3d92c7;
+}
+
+.nindex_box4-2 {
+    float: left;
+    width: 225px;
+    height: 40px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+    line-height: 24px;
+    /* margin-right: 25px; */
+    font-size: 15px;
+    color: #fff;
+    /* background: url(../imges/titlebg.png) no-repeat; */
+}
+
+.nindex_box4-2 a {
+    padding: 0 4px;
+    font-size: 12px;
+    color: #3d92c7;
+    float: right;
+    font-style: italic;
+    line-height: 20px;
+    border-bottom: 1px solid #3d92c7;
+}
+
+/*  */
+.nindex_box4-blue {
+    color: #ffffff;
+    background: #52c1ee;
+    padding: 20px 0;
+}
+
+.nindex_box4-blue-1 {
+    float: left;
+    margin-right: 33px;
+}
+
+.nindex_box4-blue-1 a {
+    color: #ffffff;
+    line-height: 26px;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.nindex_box4-blue-1 li {
+    width: 225px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+.nindex_box4-blue-2 {
+    float: left;
+
+}
+
+.nindex_box4-blue-2 a {
+    color: #ffffff;
+    line-height: 26px;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.nindex_box4-blue-2 li {
+    width: 225px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* < !-- 是所有页面的底部，小可爱记得复制粘贴哟--> */
+.nindex-link {
+    margin-top: 30px;
+    background: #ffbf5b;
+    line-height: 40px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.nindex-link-list {
+    height: 40px;
+}
+
+.nindex-link-list-2 {
+    float: left;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.nindex-link-list-select select {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.nindex-link-list-imgs {
+    margin-right: 15px;
+    margin-top: -40px;
+    float: right;
+}
+
+.foot {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.foot-p p {
+    line-height: 18px;
+    padding: 4px 0;
+}
+
+.foot-p a {
+    vertical-align: middle;
+}
+
+.foot-p {
+    float: left;
+    padding-left: 15px;
+    border-left: 2px solid #bbb;
+    margin-right: 25px;
+    color: #666
 }

@@ -69,6 +69,10 @@ abbr {
     border: 0;
 }
 
+img {
+    vertical-align: middle;
+}
+
 i,
 cite,
 em,
