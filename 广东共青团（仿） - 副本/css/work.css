@@ -1,14 +1,19 @@
+/* 辅助 */
+body {
+    height: 2000px;
+}
+
 /* 搜索栏*/
 .red {
-    background: url(../imges/bj.jpg) no-repeat center top;
-    margin-top: 128px;
+    background: url(../imges/n_bg.jpg) no-repeat center top;
+    /* margin-top: 128px; */
 }
 
 .w {
     position: relative;
     height: 180px;
     z-index: 100;
-    background: url(../imges/n-nav-bg.png) no-repeat center bottom;
+    background: url(../imges/n-nav-bg\ \(1\).png) no-repeat center bottom;
 }
 
 .w img:nth-child(1) {
@@ -19,14 +24,14 @@
     height: 142px;
 }
 
-.w img:nth-child(2) {
+/* .w img:nth-child(2) {
     width: 300px;
     height: 39px;
     text-align: center;
     position: absolute;
     top: 63px;
     left: 408px;
-}
+} */
 
 .top-search {
     position: absolute;
@@ -37,7 +42,7 @@
 
 .top-search input {
     box-sizing: border-box;
-    border: 1px solid #970303;
+    border: 1px solid #4f9dce;
     height: 26px;
     line-height: 26px;
     width: 156px;
@@ -49,7 +54,7 @@
 }
 
 .top-search button {
-    background: url(../imges/search_btn.jpg) no-repeat #960101 center center;
+    background: url(../imges/search_btn-to.jpg) no-repeat #4f9dce center center;
     float: left;
     width: 36px;
     height: 26px;
@@ -153,8 +158,8 @@
 
 .nav_child li {
     display: block;
-    background: #ac0101;
-    border: 1px solid #9e0101;
+    background: #1182d0;
+    border: 1px solid #003b8f;
 }
 
 /* .nav_child li:nth-child(1) {
@@ -187,12 +192,12 @@
 }
 
 .nav_child a:hover {
-    background-color: #920101;
+    background-color: #1182d0;
 }
 
-.nav_child:hover+.nav_list>a{
+.nav_child:hover+.nav_list>a {
     color: #fdeb00;
-  }
+}
 
 .top-nav .nav_list+.top-nav .nav_child {
     background: #ffffff;
@@ -200,4 +205,141 @@
 
 .nav_list+div.nav_child {
     background: blue;
+}
+
+/* 阅读内容 */
+.content-box {
+    margin-top: 10px;
+}
+
+.content-box .container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.read-box {
+    padding: 20px;
+}
+
+.read-title {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-image: url(../imges/titlebg4.png);
+    background-repeat: no-repeat;
+    background-position: 5px bottom;
+}
+
+.read-title-left {
+    z-index: 5;
+    float: left;
+    margin-top: 12px;
+    width: 110px;
+    height: 38px;
+    background: #197bf9
+}
+
+.read-title-left h2 {
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 38px;
+}
+
+.read-title-right {
+    font-size: 12px;
+    color: #888888;
+    float: right;
+    line-height: 24px;
+}
+
+.read-title-right s {
+    position: absolute;
+    height: 2px;
+    background: #0055a5;
+    overflow: hidden;
+    width: 800px;
+    /* right: 0px; */
+    left: 110px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.read-title-link {
+    font-size: 14px;
+    line-height: 230%;
+    background-color: #FFFFE1;
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+.read-box h1 {
+    padding: 36px 10px 30px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.read-content {
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 37px;
+    text-align: left;
+}
+
+/* 是所有页面的底部，小可爱记得复制粘贴哟 */
+.nindex-link {
+    margin-top: 30px;
+    background: #ffbf5b;
+    line-height: 40px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.nindex-link-list {
+    height: 40px;
+}
+
+.nindex-link-list-2 {
+    float: left;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.nindex-link-list-select select {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.nindex-link-list-imgs {
+    margin-right: 15px;
+    margin-top: -40px;
+    float: right;
+}
+
+
+.foot {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.foot-p p {
+    line-height: 18px;
+    padding: 4px 0;
+}
+
+.foot-p a {
+    vertical-align: middle;
+}
+
+.foot-p {
+    float: left;
+    padding-left: 15px;
+    border-left: 2px solid #bbb;
+    margin-right: 25px;
+    color: #666
 }
