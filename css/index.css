@@ -5,7 +5,7 @@ body {
 
 /* 搜索栏*/
 .red {
-    background: url(../imges/bj.jpg) no-repeat center top;
+    background: url(../image/bj.jpg) no-repeat center top;
     margin-top: 128px;
 }
 
@@ -13,7 +13,7 @@ body {
     position: relative;
     height: 180px;
     z-index: 100;
-    background: url(../imges/n-nav-bg.png) no-repeat center bottom;
+    background: url(../image/n-nav-bg.png) no-repeat center bottom;
 }
 
 .w img:nth-child(1) {
@@ -54,7 +54,7 @@ body {
 }
 
 .top-search button {
-    background: url(../imges/search_btn.jpg) no-repeat #960101 center center;
+    background: url(../image/search_btn.jpg) no-repeat #960101 center center;
     float: left;
     width: 36px;
     height: 26px;
@@ -99,31 +99,31 @@ body {
 }
 
 .nav_list .s1 {
-    background-image: url(../imges/nav-ico1.png);
+    background-image: url(../image/nav-ico1.png);
 }
 
 .nav_list .s2 {
-    background-image: url(../imges/nav-ico2.png);
+    background-image: url(../image/nav-ico2.png);
 }
 
 .nav_list .s3 {
-    background-image: url(../imges/nav-ico3.png);
+    background-image: url(../image/nav-ico3.png);
 }
 
 .nav_list .s4 {
-    background-image: url(../imges/nav-ico4.png);
+    background-image: url(../image/nav-ico4.png);
 }
 
 .nav_list .s5 {
-    background-image: url(../imges/nav-ico5.png);
+    background-image: url(../image/nav-ico5.png);
 }
 
 .nav_list .s6 {
-    background-image: url(../imges/nav-ico6.png);
+    background-image: url(../image/nav-ico6.png);
 }
 
 .nav_list .s7 {
-    background-image: url(../imges/nav-ico7.png);
+    background-image: url(../image/nav-ico7.png);
 }
 
 .nav_list a {
@@ -250,7 +250,7 @@ body {
     padding: 10px;
     height: 322px;
     width: 465px;
-    background: url(../imges/wifibg.jpg) no-repeat right bottom #fff;
+    background: url(../image/wifibg.jpg) no-repeat right bottom #fff;
     border: 1px solid #d6d6d6;
     float: right;
     float: right;
@@ -322,7 +322,7 @@ body {
 .nindex_work-imgs {
     width: 52px;
     height: 26px;
-    background-image: url(../imges/notice-icon.png);
+    background-image: url(../image/notice-icon.png);
     /* background-repeat: no-repeat; */
     /* position: relative; */
 }
@@ -442,7 +442,7 @@ body {
     padding-left: 70px;
     padding-right: 20px;
     line-height: 48px;
-    background: url(../imges/setico.png) no-repeat;
+    background: url(../image/setico.png) no-repeat;
 }
 
 .work-trend-title h3 {
@@ -583,7 +583,7 @@ body {
     line-height: 24px;
     color: #fff;
     text-align: center;
-    background: url(../imges/titlebg.png) no-repeat;
+    background: url(../image/titlebg.png) no-repeat;
 }
 
 .nindex_box2-left-top a {
@@ -637,7 +637,7 @@ body {
     line-height: 40px;
     font-size: 14px;
     color: #fff;
-    background: url(../imges/ziliaotitle.png) no-repeat;
+    background: url(../image/ziliaotitle.png) no-repeat;
 }
 
 .nindex_box2-right-tab a {
@@ -684,7 +684,7 @@ body {
     float: left;
     height: 40px;
     padding-left: 36px;
-    background: url(../imges/flag.png) no-repeat left center;
+    background: url(../image/flag.png) no-repeat left center;
     font-size: 15px;
     border: 1px solid #fff;
 }
@@ -809,7 +809,7 @@ body {
 }
 
 .nindex_box3-top {
-    background: url(../imges/titlebg2.png) no-repeat;
+    background: url(../image/titlebg2.png) no-repeat;
     width: 635px;
     height: 45px;
     /* background-color: hotpink; */
@@ -846,7 +846,7 @@ body {
     float: right;
     width: 292px;
     height: 45px;
-    background: url(../imges/titlebg2.png) no-repeat;
+    background: url(../image/titlebg2.png) no-repeat;
 }
 
 .nindex_box3-top-right h3 {
@@ -887,7 +887,7 @@ body {
     height: 40px;
     text-align: center;
     line-height: 24px;
-    background: url(../imges/titlebg.png) no-repeat;
+    background: url(../image/titlebg.png) no-repeat;
 }
 
 .nindex_box4-1 {
@@ -901,7 +901,7 @@ body {
     font-size: 14.04px;
     font-weight: bolder;
     color: #fff;
-    /* background: url(../imges/titlebg.png) no-repeat; */
+    /* background: url(../image/titlebg.png) no-repeat; */
 }
 
 .nindex_box4-1 a {
@@ -924,7 +924,7 @@ body {
     /* margin-right: 25px; */
     font-size: 15px;
     color: #fff;
-    /* background: url(../imges/titlebg.png) no-repeat; */
+    /* background: url(../image/titlebg.png) no-repeat; */
 }
 
 .nindex_box4-2 a {

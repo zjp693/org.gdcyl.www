@@ -2,7 +2,7 @@
 
 /* 搜索栏*/
 .red {
-    background: url(../imges/n_bg.jpg) no-repeat center top;
+    background: url(../image/n_bg.jpg) no-repeat center top;
     /* margin-top: 128px; */
 }
 
@@ -10,7 +10,7 @@
     position: relative;
     height: 180px;
     z-index: 100;
-    background: url(../imges/n-nav-bg\ \(1\).png) no-repeat center bottom;
+    background: url(../image/n-nav-bg\ \(1\).png) no-repeat center bottom;
 }
 
 .w img:nth-child(1) {
@@ -51,7 +51,7 @@
 }
 
 .top-search button {
-    background: url(../imges/search_btn-to.jpg) no-repeat #4f9dce center center;
+    background: url(../image/search_btn-to.jpg) no-repeat #4f9dce center center;
     float: left;
     width: 36px;
     height: 26px;
@@ -95,31 +95,31 @@
 }
 
 .nav_list .s1 {
-    background-image: url(../imges/nav-ico1.png);
+    background-image: url(../image/nav-ico1.png);
 }
 
 .nav_list .s2 {
-    background-image: url(../imges/nav-ico2.png);
+    background-image: url(../image/nav-ico2.png);
 }
 
 .nav_list .s3 {
-    background-image: url(../imges/nav-ico3.png);
+    background-image: url(../image/nav-ico3.png);
 }
 
 .nav_list .s4 {
-    background-image: url(../imges/nav-ico4.png);
+    background-image: url(../image/nav-ico4.png);
 }
 
 .nav_list .s5 {
-    background-image: url(../imges/nav-ico5.png);
+    background-image: url(../image/nav-ico5.png);
 }
 
 .nav_list .s6 {
-    background-image: url(../imges/nav-ico6.png);
+    background-image: url(../image/nav-ico6.png);
 }
 
 .nav_list .s7 {
-    background-image: url(../imges/nav-ico7.png);
+    background-image: url(../image/nav-ico7.png);
 }
 
 .nav_list a {
@@ -225,7 +225,7 @@
     position: relative;
     width: 100%;
     height: 50px;
-    background-image: url(../imges/titlebg4.png);
+    background-image: url(../image/titlebg4.png);
     background-repeat: no-repeat;
     background-position: 5px bottom;
 }
